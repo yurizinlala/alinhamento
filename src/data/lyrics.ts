@@ -102,7 +102,7 @@ export interface SongAct {
 export const SONG_DURATION_SEC = 201.8;
 export const SONG_BPM = 135;
 export const DEFAULT_STUDIO_AUDIO_URL =
-  '/assets/aistudio/J_o_-_Alinhamento_Milenar_31cc1621.mp3';
+  './assets/aistudio/J_o_-_Alinhamento_Milenar_31cc1621.mp3';
 
 export const SONG_ACTS: SongAct[] = [
   { id: 'intro', label: 'Abertura', startSec: 0, endSec: 18.32, subtitle: 'Jão · SUPER (135 BPM)' },
