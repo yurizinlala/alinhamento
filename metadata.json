@@ -1,0 +1,6 @@
+{
+  "name": "Alinhamento Milenar — Jão",
+  "description": "Experiência interativa de tipografia cinética, motion graphics 3D e player sincronizado para a música Alinhamento Milenar de Jão.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

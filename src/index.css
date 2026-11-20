@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    background-color: #07080D;
+    color: #F4EFE6;
+    font-family: var(--font-sans);
+    scroll-behavior: auto;
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: #07080D;
+  }
+}
+
+/* Custom sleek range slider for timeline and volume */
+input[type="range"].motion-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="range"].motion-slider::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 9999px;
+  background: rgba(244, 239, 230, 0.18);
+}
+
+input[type="range"].motion-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 9999px;
+  background: #E8A838;
+  margin-top: -5px;
+  box-shadow: 0 0 0 2px #07080D;
+  transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+input[type="range"].motion-slider:hover::-webkit-slider-thumb,
+input[type="range"].motion-slider:focus-visible::-webkit-slider-thumb {
+  transform: scale(1.2);
+}
+
+input[type="range"].motion-slider::-moz-range-track {
+  height: 4px;
+  border-radius: 9999px;
+  background: rgba(244, 239, 230, 0.18);
+}
+
+input[type="range"].motion-slider::-moz-range-thumb {
+  height: 14px;
+  width: 14px;
+  border: 2px solid #07080D;
+  border-radius: 9999px;
+  background: #E8A838;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
